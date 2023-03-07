@@ -1,3 +1,6 @@
+
+//test comment
+
 //constructor
 function Character(name,location) {
     this.name = name;
