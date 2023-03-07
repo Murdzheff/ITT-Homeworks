@@ -1,0 +1,23 @@
+
+body {
+   min-height: 100vh;
+   min-width: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(31, 45, 53);
+   flex-direction: column;
+}
+
+select {
+    width: 20%;
+    height: 30px;
+    border: none;
+    background-color: wheat;
+    color: rgb(31, 45, 53);
+    border-radius: 15px;
+}
+
+div {
+    color: wheat;
+}

@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(30, 42, 29);
+}
+
+
+form {
+    display: block;
+}
+
+input {
+    background-color: rgb(76, 96, 74);
+    font-size: 20px;
+    border: none;
+    color: red;
+    height: 50px;
+}
+
+button {
+    position: relative;
+    top: -3px;
+    background-color: darkkhaki;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    width: 100px;
+}
+
+h2 {
+    margin-top: 20px;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    width: 600px;
+    visibility: hidden;
+    font-size: 18px;
+}

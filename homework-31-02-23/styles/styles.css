@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: #1e1f35;
+}
+
+.page {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    background-color: #1e1f35;
+}
+
+#register {
+    background-color: #1e1f35;
+}
+#home {
+    background-color: #1e1f35;
+}
+
+footer {
+    height: 150px;
+    background-color: #1e1f35;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: #44475a;
+    font-size: 100%;
+    margin: 1% 5%;
+    border-radius: 20px;
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 0 20px;
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+form input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    height: 30%;
+    border-radius: 10px;
+    color: white;
+    width: 80%;
+    font-size: 100%;
+    
+}
+
+form input::placeholder {
+    color:white;
+    font-size: 100%;
+}
+
+.btns {
+    background-color: #50fa7b;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+.inputs {
+    border: 2px solid #f1fa8c;
+}
+
+#loginForm {
+    align-items: center;
+    justify-content: center;
+}
+
+#registerForm {
+    align-items: center;
+    justify-content: center;
+}
+
+#loginLink {
+    background-color: #f1fa8c;
+}
+
+#registerLink {
+    background-color: #50fa7b;
+}
+
+#homeLink {
+    background-color: #ff5555;
+}

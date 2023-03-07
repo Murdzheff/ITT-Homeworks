@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./model/UserManager.js"></script>
+    
+</head>
+<body>
+    
+    <nav>
+        <a id="loginLink" href="#login">Login</a>
+        <a id="registerLink" href="#register">Register</a>
+        <a id="homeLink" href="#home">Home</a>
+    </nav>
+
+    <div class="page" id="login">
+        <form id="loginForm">
+            <input class="inputs" name="username" type="text" placeholder="username">
+            <input class="inputs" name="pass" type="password" placeholder="pass">
+            <input class="btns" type="submit" value="Login">
+        </form>
+    </div>
+
+    <div class="page" id="register">
+        <form id="registerForm">
+            <input id="username" class="inputs" type="text" placeholder="username">
+            <input id="pass" class="inputs" type="password" placeholder="pass">
+            <input id="verify" class="inputs" type="password" placeholder="confirm pass">
+            <button id="registerBtn" class="btns" type="submit">Register</button>
+        </form>
+    </div>
+
+    <div class="page" id="home">Home is here!</div>
+    
+    <script src="./ViewController.js"></script>
+</body>
+</html>

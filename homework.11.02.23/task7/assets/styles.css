@@ -1,0 +1,65 @@
+body {
+    background-color: #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Julee', cursive;
+    color: goldenrod;
+}
+
+.container {
+    height: 100vh;
+    width: 50%;
+}
+
+.delete {
+    background-color: #363636;
+    border: 1px solid goldenrod;
+    cursor: pointer;
+    color: goldenrod;
+    font-family: 'Julee', cursive;
+    height: 30px;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+form {
+    margin-top: 100px;
+}
+
+input {
+    background-color: #706f6f;
+    height: 30px;
+    color: goldenrod;
+    font-family: 'Julee', cursive;
+    font-size: 30px;
+    border: 2px dashed goldenrod;
+}
+
+#submitBut {
+    height: 36px;
+    background-color: #363636;
+    border: 1px solid goldenrod;
+    cursor: pointer;
+    color: goldenrod;
+    font-family: 'Julee', cursive;
+    margin-left: 90px;
+    position: relative;
+    top: -4px;
+
+}
+
+#list {
+    display: block;
+    margin-top: 15%;
+    width: 100%;
+    font-size: 30px;
+}
+
+.note {
+    font-size: larger;
+}
