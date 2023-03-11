@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: #44475a;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#dropDown {
+    margin-top: 50px;
+    height: 30px;
+    max-width: 300px;
+}
+
+#userPosts {
+    max-height: 400px;
+    overflow:auto;
+    margin: 20px 0px;
+    
+}
+
+.postHolder {
+    margin: 10px 20px;
+    border: 2px solid #f1fa8c;
+    border-radius: 10px;
+}
+
+#postHeading {
+    visibility: hidden;
+}
+
+#albums{
+    visibility: hidden;
+    margin: 0px 0px 0px 0px;
+}
+
+#allPhotos {
+    margin: 0px 0px 0px 0px;
+}
+
+.albumHeadings {
+    margin: 20px 10px;
+}
+
+#notCompleted {
+    visibility: hidden;
+    margin: 50px 50px 0px 50px;
+}
+
+.todoItems {
+    margin: 20px 10px;
+}
+
+h2 {
+    margin: 30px;
+    font-size: 26px;
+}
