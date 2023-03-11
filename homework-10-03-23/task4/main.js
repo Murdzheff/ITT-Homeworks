@@ -1,27 +1,28 @@
-const select =            document.getElementById("dropDown");
-const userPosts =         document.getElementById("userPosts");
-const postHeading =       document.getElementById("postHeading");
-const albums =            document.getElementById("albums");
-const albumHolder =       document.getElementById("userAlbum");
-const allPhotos =         document.getElementById("allPhotos");
-const todosContainer =    document.getElementById("todos");
-const todoHead =          document.getElementById("notCompleted");
-let albumArr =            [];
+const select = document.getElementById("dropDown");
+const userPosts = document.getElementById("userPosts");
+const postHeading = document.getElementById("postHeading");
+const albums = document.getElementById("albums");
+const albumHolder = document.getElementById("userAlbum");
+const allPhotos = document.getElementById("allPhotos");
+const todosContainer = document.getElementById("todos");
+const todoHead = document.getElementById("notCompleted");
+let albumArr = [];
 
 
 select.addEventListener("change", fetchAll);
 
 
-function getPhotos (id) {
+function getPhotos(id) {
     fetch(`https://jsonplaceholder.typicode.com/albums/${id}/photos`)
-                    .then(response => {
-                        return response.json()
-                    })
-                    .then(value => {
-                        albumArr += value.length;
-                        allPhotos.innerText = `All photos ${albumArr}`;
-                    })
+        .then(response => {
+            return response.json()
+        })
+        .then(value => {
+            albumArr += value.length;
+            allPhotos.innerText = `All photos ${albumArr}`;
+        })
 }
+
 
 //fire that when eventhandler is activated
 function fetchAll(e) {
@@ -37,7 +38,7 @@ function fetchAll(e) {
             } else {
                 alert("error connecting")
             }
-            
+
         })
         .then(value => {
             userPosts.innerHTML = "";
@@ -46,6 +47,53 @@ function fetchAll(e) {
 
                 let postHolder = document.createElement("div");
                 postHolder.classList.add("postHolder");
+                postHolder.id = e.id;
+
+                postHolder.addEventListener("mousedown",(e) => {
+                    e.preventDefault();
+                    if (postHolder.children[2].style.display !== "none") {
+                        postHolder.children[2].style.display = "none";
+                    } else {
+                        postHolder.children[2].style.display = "flex"
+                    }
+                })
+
+                fetch(`https://jsonplaceholder.typicode.com/posts/${postHolder.id}/comments`)
+                    .then(response => {
+                        if (response.ok) {
+                            return response.json();
+                        } else {
+                            alert("error connecting")
+                        }
+                    })
+                    .then(value => {
+                        let commentHolder = document.createElement("div");
+                            commentHolder.classList.add("commentHolders");
+                            commentHolder.style.display = "none";
+
+                        value.forEach(comment => {
+                            let commentBody = document.createElement("p");
+                            commentBody.classList.add("commentBodies")
+                            commentBody.innerText = comment.body;
+
+                            let commentEmail = document.createElement("h4");
+                            commentEmail.innerText = comment.email;
+                            commentEmail.classList.add("commentEmails");
+                            
+                            
+
+                            
+
+                            commentHolder.append(commentEmail, commentBody);
+
+                            
+
+                            
+                        })
+                        postHolder.appendChild(commentHolder);
+
+                        
+                    })
 
                 let postTitle = document.createElement("h3");
                 postTitle.innerText = e.title;
@@ -55,8 +103,13 @@ function fetchAll(e) {
                 post.innerText = e.body;
                 post.classList.add("posts");
 
+                
+
+
                 postHolder.append(postTitle, post);
                 userPosts.appendChild(postHolder);
+
+                
             })
             return value;
         });
