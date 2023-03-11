@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#randomize {
+    margin: 10%;
+}
+
+#fox {
+    height: 250px;
+    width: 250px;
+}
+
