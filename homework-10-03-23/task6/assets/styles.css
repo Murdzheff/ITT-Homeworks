@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: #353956;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#userInput {
+    width: 200px;
+    border: 1px solid snow;
+    background-color: transparent;
+    color: snow;
+    height: 30px;
+    margin-top: 30px;
+}
+
+#suggestCont {
+    background-color: #353956;
+    z-index: 3;
+}
+
+.suggestions {
+    width: 200px;
+    border: 1px solid snow;
+    background-color: #353956;
+    z-index: 2;
+}
+
+.suggestions:hover {
+    background-color: darkgreen;
+}
+
+#details {
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+}

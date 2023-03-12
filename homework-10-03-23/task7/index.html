@@ -11,9 +11,20 @@
 
 </head>
 <body>
-    <input placeholder="Search for animals" autocomplete="given-name" id="userInput" type="text">
-    <div id="suggestCont"></div>
-    <div id="details"></div>
+    <select name="select" id="select">
+        <option value="5">5 rows</option>
+        <option value="10">10 rows</option>
+        <option value="15">15 rows</option>
+        <option value="20">20 rows</option>
+    </select>
+
+    <span id="pagination">
+
+    </span>
+
+    <table id="table">
+        <tr id="headings"></tr>
+    </table>
     <script src="main.js"></script>
 </body>
 </html>

@@ -42,7 +42,7 @@ function fetchAll(e) {
         })
         .then(value => {
             userPosts.innerHTML = "";
-
+            console.log(value);
             value.forEach(e => {
 
                 let postHolder = document.createElement("div");

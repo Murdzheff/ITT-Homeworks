@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #353956;
+    color: snow;
+    font-family: sans-serif;
+}
+
+th {
+    width: 200px;
+    height: 30px;
+    margin: 30px;
+}
+
+td {
+    border: 1px solid snow;
+    object-fit: cover;
+    margin: 30px;
+    text-align: center;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    margin: 40px;
+}
+
+#pagination {
+    margin: 30px;
+}
+
+#select {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    background-color: snow;
+    margin: 10px;
+    border: none;
+}
