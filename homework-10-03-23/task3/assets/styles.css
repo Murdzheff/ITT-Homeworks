@@ -3,9 +3,19 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #353956;
 }
 
 img {
     max-height: 400px;
     max-width: 400px;
+}
+
+#getImages {
+    margin: 10%;
+    height: 28px;
+    background-color: #353956;
+    color: snow;
+    border: 2px solid yellow;
+    border-radius: 5px;
 }

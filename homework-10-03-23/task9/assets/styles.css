@@ -1,0 +1,9 @@
+body {
+  background-color: #353956;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: snow;
+  flex-direction: column;
+}
+

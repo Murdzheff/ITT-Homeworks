@@ -13,6 +13,7 @@ userInput.addEventListener("input", () => {
             }
         })
         .then(result => {
+            console.log(result);
             suggestions.innerHTML = "";
             render(result);
         })

@@ -3,9 +3,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #353956;
 }
 
 #randomize {
+    height: 28px;
     margin: 10%;
+    background-color: #353956;
+    color: snow;
+    border: 2px solid yellow;
+    border-radius: 5px;
 }
 

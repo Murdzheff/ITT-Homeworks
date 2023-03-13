@@ -3,10 +3,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #353956;
 }
 
 #randomize {
     margin: 10%;
+    height: 28px;
+    background-color: #353956;
+    color: snow;
+    border: 2px solid yellow;
+    border-radius: 5px;
 }
 
 #fox {
