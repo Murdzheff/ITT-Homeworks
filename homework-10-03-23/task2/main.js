@@ -9,7 +9,7 @@ randomize.addEventListener("click", (e) => {
     for (let i = 0; i < 6; i++) {
         let fox = fetch("https://randomfox.ca/floof/.")
             .then(response => {
-                if (fox.ok) {
+                if (response.ok) {
                     return response.json()
                 } else {
                     return console.log("No fox found in that forest");

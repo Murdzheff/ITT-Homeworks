@@ -12,7 +12,12 @@ function render(rows,pages) {
     })
     getData
         .then(response => {
-            return response.json();
+            if (response.ok) {
+                return response.json();
+            } else {
+                return console.log("error");
+            }
+            
         })
         .then(value => {
             table.innerHTML = "";
@@ -82,13 +87,7 @@ function showItems (el) {
     
 
     let imgTd = document.createElement("td");
-
-    let image = document.createElement("img");
-    image.src = el.url;
-    image.style.width = "100px";
-    
-
-    imgTd.appendChild(image);
+    imgTd.innerText = el.url
     imgTd.classList.add("imgTd")
 
     let imgWidth = document.createElement("td");

@@ -184,7 +184,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
             option.value = element.id;
             option.innerText = element.email;
 
-            select.appendChild(option);
+            select.appendChild(option); 
 
         });
 

@@ -13,7 +13,11 @@ btn.addEventListener("click", (e) => {
     let loading = fetch("https://randomfox.ca/floof/");
     loading
         .then(response => {
-            return response.json()
+            if (response.ok) {
+                return response.json();
+            } else {
+                return console.log("error");
+            }
         })
         .then(result => {
             img.style.display = "flex";

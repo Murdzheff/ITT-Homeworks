@@ -8,7 +8,11 @@ search.addEventListener("input", () => {
 
     fetch(`http://www.omdbapi.com/?s=${search.value}&apikey=2150216b`)
         .then(response => {
-            return response.json();
+            if (response.ok) {
+                return response.json();
+            } else {
+                return console.log("error");
+            }
         })
         .then(result => {
             if (result.Search && result.Search.length) {
@@ -31,7 +35,11 @@ search.onkeyup = (event) => {
 function renderManyMovies (val) {
     fetch(`http://www.omdbapi.com/?s=${val}&apikey=2150216b`)
         .then(response => {
-            return response.json();
+            if (response.ok) {
+                return response.json();
+            } else {
+                return console.log("error");
+            }
         })
         .then(result => {
             movieHolder.innerHTML = "";
@@ -70,7 +78,11 @@ function renderSuggestions(obj) {
 function renderMovie(id) {
     fetch(`http://www.omdbapi.com/?i=${id}&apikey=2150216b`)
     .then(response => {
-        return response.json();
+        if (response.ok) {
+            return response.json();
+        } else {
+            return console.log("error");
+        }
     })
     .then(mov => {
         let movieElement = document.createElement("img");
