@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="model/userManager.js"></script>
+    <script src="./model/offerManager.js"></script>
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    
+</head>
+<body>
+    <header>
+        <a href="#home" id="homeA">Home</a>
+        <a id="overviewA" href="#overview">Overview</a>
+        <a id="statisticsA" href="#statistics">Statistics</a>
+        <a id="registerA" href="#register">Register</a>
+        <a id="loginA" href="#login">Log In</a>
+        <a id="logoutA" href="#home">log Out</a>
+    </header>
+    <main>
+        
+        <div id="home">
+            <h1 id="welcome">Welcome to Spank Bank</h1>
+        </div>
+        <div id="register">
+            <form id="regForm" action="submit">
+                <input name="username" id="regUsername" placeholder="Username" type="text">
+                <input name="pass" id="regPass" placeholder="Password" type="password">
+                <input id="regVerPass" placeholder="Verify Password" type="password">
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <div id="login">
+            <form id="logForm" action="submit">
+                <input type="text" name="username" id="logUsername">
+                <input name="pass" type="password">
+                <button name="submit" type="submit" >Log in</button>
+            </form>
+        </div>
+        <div id="statistics">
+
+        </div>
+        <div id="overview">
+            <form id="loanForm" action="submit">
+                <input id="borrower" type="text">
+                <input id="borrowerIncome" placeholder="Your income" type="number">
+                <input id="requestAmount" placeholder="Requested Amount" type="number">
+                <input id="term" placeholder="Term in months" type="number">
+                <input type="submit" value="APPLY NOW">
+            </form>
+
+            <div id="offersContainer">
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>All rights reserved: Spank Bank</h2>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
